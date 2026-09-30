@@ -1,0 +1,13 @@
+# secrets
+.env
+*.key
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# local runs and model files
+*.log
+models/
+.DS_Store
