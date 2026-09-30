@@ -1,0 +1,64 @@
+{
+  "failure_mode": {
+    "type": "choice",
+    "instructions": "A maintenance technician wrote `notification`. Which failure mode does it describe? Judge from the free texts, not from the priority.",
+    "criteria": {
+      "external_leakage_process": "ELP. Process fluid escapes to the outside, for example a leaking mechanical seal, gasket or flange.",
+      "external_leakage_utility": "ELU. A utility fluid escapes to the outside: lubricating oil, cooling water or sealing water.",
+      "internal_leakage": "INL. Fluid passes internally where it should not, for example a valve that does not close tight.",
+      "vibration": "VIB. Abnormal or excessive vibration.",
+      "noise": "NOI. Abnormal noise.",
+      "overheating": "OHE. A part runs hotter than normal, for example a bearing or motor winding.",
+      "fail_to_start": "FTS. The equipment does not start on demand.",
+      "spurious_stop": "UST. The equipment stops or trips unexpectedly.",
+      "low_output": "LOO. Flow, pressure or delivery below what is required.",
+      "erratic_output": "ERO. Output oscillates or is unstable.",
+      "plugged": "PLU. Flow is blocked or choked.",
+      "structural_deficiency": "STD. Physical damage: cracks, corrosion, broken supports.",
+      "abnormal_instrument_reading": "AIR. An instrument shows a wrong or implausible value.",
+      "breakdown": "BRD. Serious damage; the equipment is out of service.",
+      "other": "Another failure mode not listed here."
+    }
+  },
+  "failure_family": {
+    "type": "choice",
+    "instructions": "Which family of failure does `notification` belong to?",
+    "criteria": {
+      "mechanical": "Seals, bearings, shafts, couplings, impellers, and leaks at mechanical parts.",
+      "electrical": "Motors, cables, drives, switchgear.",
+      "instrumentation": "Sensors, transmitters, controllers, instrument readings.",
+      "process": "Process conditions: flow, pressure, blockage, product quality.",
+      "structural": "Casings, supports, piping integrity, corrosion."
+    }
+  },
+  "same_failure": {
+    "type": "noul",
+    "instructions": "Do `notification` and `previous_notification_same_post` describe the same failure on the same asset?",
+    "criteria": {
+      "true": "Same equipment and the same failure mode, so the new notification is a recurrence.",
+      "false": "A different failure mode, or different equipment."
+    }
+  },
+  "root_cause_6m": {
+    "type": "choice",
+    "instructions": "Which Ishikawa (6M) category most likely explains the cause of the failure in `notification`?",
+    "criteria": {
+      "machine": "Wear or failure of the equipment itself: worn seal, damaged bearing, fatigue.",
+      "method": "A procedure is wrong or missing: operating mode, maintenance procedure, start-up sequence.",
+      "material": "Parts or product: wrong spare part, abrasive or corrosive product.",
+      "manpower": "Human action: wrong assembly, skipped step, lack of training.",
+      "measurement": "A wrong or missing measurement or setting.",
+      "environment": "Surroundings: temperature, humidity, dust, vibration from nearby equipment."
+    }
+  },
+  "production_impact": {
+    "type": "score",
+    "instructions": "How severe was the impact of the failure in `notification` on production and safety?",
+    "criteria": [
+      "No impact: the equipment still runs normally and the repair can wait for planned maintenance.",
+      "Degraded: the equipment still runs but needs repair soon; production continues.",
+      "Redundancy lost: the standby equipment took over, so production continues with no backup left.",
+      "Production stopped, or a safety or environmental release occurred."
+    ]
+  }
+}

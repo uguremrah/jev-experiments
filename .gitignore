@@ -11,3 +11,6 @@ __pycache__/
 *.log
 models/
 .DS_Store
+
+# replay cache of the linter
+.cache/

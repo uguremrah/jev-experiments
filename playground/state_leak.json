@@ -1,0 +1,22 @@
+{
+  "notification": {
+    "id": "10045872",
+    "type": "Z01 corrective",
+    "date": "2026-09-14",
+    "technical_post": "TAP-P101",
+    "equipment_type": "Centrifugal pump",
+    "priority": "2",
+    "abc_code": "A",
+    "description": "Transfer pump seal leak",
+    "emission_text": "Product leaking at the mechanical seal, drop by drop. Solvent smell around the pump.",
+    "validation_text": "Confirmed by the shift lead, standby pump now running.",
+    "preparation_text": "Plan a spare seal and an electrical lock-out."
+  },
+  "previous_notification_same_post": {
+    "id": "10043310",
+    "date": "2026-07-02",
+    "description": "P101 seal weeping",
+    "emission_text": "Seepage at the mechanical seal, coupling side.",
+    "closing_text": "Seal replaced, test run OK."
+  }
+}

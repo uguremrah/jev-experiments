@@ -21,10 +21,16 @@ jev-experiments/
 ├── CLAUDE.md            points Claude Code at AGENTS.md
 ├── docs/                write-ups and background (to be filled)
 ├── experiments/         one folder per experiment, each self-contained
+│   ├── 01-qualitative-linter/   Jev judges what every log line leaks
 │   └── _template/       copy this to start a new experiment
-├── playground/          JSON you can paste into the TypeSafe console Playground
+├── playground/          maintenance-notification case to paste into the TypeSafe console
 └── shared/              small helpers shared by experiments (API client and so on)
 ```
+
+## Start here
+
+- **See it by hand:** [`playground/`](playground/) has one invented maintenance notification and five questions to paste into the TypeSafe console.
+- **See it in a workflow:** [`experiments/01-qualitative-linter/`](experiments/01-qualitative-linter/) shows one English rule judging every log line in Python and Java. Jev triages each line, and the agent fixes only what is flagged.
 
 ## Replicate with your agent
 

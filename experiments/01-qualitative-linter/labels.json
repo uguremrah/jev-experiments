@@ -1,0 +1,13 @@
+{
+  "PaymentService.java:13": "financial",
+  "PaymentService.java:14": "secret",
+  "PaymentService.java:20": "nothing_sensitive",
+  "PaymentService.java:21": "nothing_sensitive",
+  "PaymentService.java:22": "personal_data",
+  "checkout.py:16": "nothing_sensitive",
+  "checkout.py:20": "secret",
+  "checkout.py:23": "personal_data",
+  "checkout.py:24": "personal_data",
+  "checkout.py:27": "nothing_sensitive",
+  "checkout.py:28": "nothing_sensitive"
+}

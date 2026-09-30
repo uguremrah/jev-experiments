@@ -1,0 +1,22 @@
+{
+  "notification": {
+    "id": "10046019",
+    "type": "Z01 corrective",
+    "date": "2026-09-21",
+    "technical_post": "TAP-P101",
+    "equipment_type": "Centrifugal pump",
+    "priority": "3",
+    "abc_code": "A",
+    "description": "Abnormal noise on transfer pump",
+    "emission_text": "Bearing noise and strong vibration on the motor side. Bearing housing hot to the touch.",
+    "validation_text": "Seen by the shift lead, the pump is still running.",
+    "preparation_text": "Plan a vibration analysis and spare bearings."
+  },
+  "previous_notification_same_post": {
+    "id": "10045872",
+    "date": "2026-09-14",
+    "description": "Transfer pump seal leak",
+    "emission_text": "Product leaking at the mechanical seal, drop by drop.",
+    "closing_text": "Seal replaced, test run OK."
+  }
+}

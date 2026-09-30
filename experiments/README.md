@@ -6,4 +6,4 @@ To add one, copy `_template/` and follow the steps in [AGENTS.md](../AGENTS.md).
 
 | # | Experiment | Status |
 |---|---|---|
-| - | (none published yet) | |
+| 01 | [Qualitative linter](01-qualitative-linter/): what does each log line leak? | Published 2026-10-01 |
